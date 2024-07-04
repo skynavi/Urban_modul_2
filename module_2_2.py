@@ -9,3 +9,5 @@ elif (first == second or
       second == third or
       first == third):
     print('2 числа равны')
+
+
