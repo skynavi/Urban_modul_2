@@ -10,4 +10,3 @@ elif (first == second or
       first == third):
     print('2 числа равны')
 
-
