@@ -12,25 +12,26 @@ count_calls()
 def string_info(string_1):
     len_ = len(string_1)
     tup_ = (len_, string_1.upper(), string_1.lower())
-    print(tup_)
-    return string_1
+    return tup_
 
 
 count_calls()
 
-string_info('Capybara')
 
 
 def is_contains(string, list_to_search):
     for i in list_to_search:
         if string in i:
-            print('True')
+            return True
         else:
-            print('Fals')
-        return i
+            return False
 
 
 count_calls()
 
-is_contains('ban', ['ban', 'BaNaN', 'urBAN'])
+
+print(string_info('Capybara'))
+print(string_info('Armageddon'))
+print(is_contains('ban', ['ban', 'BaNaN', 'urBAN'])) # Urban ~ urBAN
+print(is_contains('cycle', ['recycling', 'cyclic'])) # No matches
 print(calls)
