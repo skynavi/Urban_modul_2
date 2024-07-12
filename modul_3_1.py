@@ -18,7 +18,6 @@ def string_info(string_1):
 count_calls()
 
 
-
 def is_contains(string, list_to_search):
     for i in list_to_search:
         if string in i:
@@ -29,9 +28,8 @@ def is_contains(string, list_to_search):
 
 count_calls()
 
-
 print(string_info('Capybara'))
 print(string_info('Armageddon'))
-print(is_contains('ban', ['ban', 'BaNaN', 'urBAN'])) # Urban ~ urBAN
-print(is_contains('cycle', ['recycling', 'cyclic'])) # No matches
+print(is_contains('ban', ['ban', 'BaNaN', 'urBAN']))  # Urban ~ urBAN
+print(is_contains('cycle', ['recycling', 'cyclic']))  # No matches
 print(calls)
