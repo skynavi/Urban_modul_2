@@ -22,11 +22,11 @@ string_info()
 while True: #  я не понял как сделать циклическое выполнение, поэтому так...
     a = input('поиск: ')
     b = ['ban', 'BaNaN', 'urBAN']
-    def is_contains(c, e):
-        if c in e:
+    def is_contains(string, list_to_search):
+        if string in list_to_search:
             print('True')
 
-        if c not in e:
+        if string not in list_to_searchr:
             print('Fals')
         count_calls() + 1
 
