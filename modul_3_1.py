@@ -16,8 +16,7 @@ def string_info(string_1):
     return tup_
 
 
-
-#count_calls()
+# count_calls()
 
 
 def is_contains(string, list_to_search):
@@ -25,11 +24,12 @@ def is_contains(string, list_to_search):
     for i in list_to_search_low:
         if string in i:
             return True
-    count_calls()
+        count_calls()
+        if string not in i:  # без этого if не отдает False, выводит None
+            return False
 
 
-
-#count_calls()
+# count_calls()
 
 print(string_info('Capybara'))
 print(string_info('Armageddon'))
